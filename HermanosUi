@@ -1,0 +1,1297 @@
+--[[
+    WindUI (ScreenGui)
+    Hermanos'Dev | PVP
+    Cracked by PaLiToS
+]]
+
+local G = {}
+
+-- WindUI (ScreenGui)
+G.WindUI = Instance.new("ScreenGui")
+G.WindUI.Name = "WindUI"
+G.WindUI.ResetOnSpawn = false
+G.WindUI.DisplayOrder = 99999
+G.WindUI.IgnoreGuiInset = true
+G.WindUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+G.WindUI.ScreenInsets = Enum.ScreenInsets.None
+
+-- Window (Folder)
+G.Window = Instance.new("Folder")
+G.Window.Name = "Window"
+G.Window.Parent = G.WindUI
+
+-- Frame (Frame)
+G.Frame = Instance.new("Frame")
+G.Frame.Active = true
+G.Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+G.Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame.BackgroundTransparency = 1
+G.Frame.BorderSizePixel = 0
+G.Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+G.Frame.Size = UDim2.new(0, 580, 0, 460)
+G.Frame.Parent = G.Window
+
+-- UIScale (UIScale)
+G.UIScale = Instance.new("UIScale")
+G.UIScale.Scale = 0.68043476343154907
+G.UIScale.Parent = G.Frame
+
+-- Blur (ImageLabel)
+G.Blur = Instance.new("ImageLabel")
+G.Blur.Name = "Blur"
+G.Blur.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Blur.BackgroundTransparency = 1
+G.Blur.BorderSizePixel = 0
+G.Blur.Position = UDim2.new(0, -50, 0, -50)
+G.Blur.Size = UDim2.new(1, 100, 1, 100)
+G.Blur.ZIndex = -2147483648
+G.Blur.Image = "rbxassetid://8992230677"
+G.Blur.ImageColor3 = Color3.fromRGB(0, 0, 0)
+G.Blur.ImageTransparency = 0.60000002384185791
+G.Blur.ScaleType = Enum.ScaleType.Slice
+G.Blur.SliceCenter = Rect.new(99, 99, 99, 99)
+G.Blur.Parent = G.Frame
+
+-- Background (ImageLabel)
+G.Background = Instance.new("ImageLabel")
+G.Background.Name = "Background"
+G.Background.AnchorPoint = Vector2.new(0.5, 0.5)
+G.Background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Background.BackgroundTransparency = 1
+G.Background.BorderSizePixel = 0
+G.Background.Position = UDim2.new(0.5, 0, 0.5, 0)
+G.Background.Size = UDim2.new(1, 0, 1, 0)
+G.Background.Image = "rbxassetid://89641024074289"
+G.Background.ImageColor3 = Color3.fromRGB(16, 16, 16)
+G.Background.ImageTransparency = 0.14999997615814209
+G.Background.ScaleType = Enum.ScaleType.Slice
+G.Background.SliceCenter = Rect.new(460, 460, 460, 460)
+G.Background.SliceScale = 0.05161290243268013
+G.Background.Parent = G.Frame
+
+-- ImageLabel (ImageLabel)
+G.ImageLabel = Instance.new("ImageLabel")
+G.ImageLabel.AnchorPoint = Vector2.new(0.5, 0)
+G.ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageLabel.BackgroundTransparency = 1
+G.ImageLabel.BorderSizePixel = 0
+G.ImageLabel.Position = UDim2.new(0.5, 0, 1, 4)
+G.ImageLabel.Size = UDim2.new(0, 160, 0, 4)
+G.ImageLabel.Image = "rbxassetid://125083578015333"
+G.ImageLabel.ImageTransparency = 0.80000001192092896
+G.ImageLabel.ScaleType = Enum.ScaleType.Slice
+G.ImageLabel.SliceCenter = Rect.new(512, 325, 512, 325)
+G.ImageLabel.SliceScale = 0.30461537837982178
+G.ImageLabel.Parent = G.Background
+
+-- Frame_2 (TextButton)
+G.Frame_2 = Instance.new("TextButton")
+G.Frame_2.Name = "Frame"
+G.Frame_2.AnchorPoint = Vector2.new(0.5, 0.5)
+G.Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_2.BackgroundTransparency = 1
+G.Frame_2.BorderSizePixel = 0
+G.Frame_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+G.Frame_2.Size = UDim2.new(1, 12, 1, 12)
+G.Frame_2.ZIndex = 99
+G.Frame_2.AutoButtonColor = false
+G.Frame_2.Text = ""
+G.Frame_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_2.TextSize = 14
+G.Frame_2.Parent = G.ImageLabel
+
+-- Frame_3 (Frame)
+G.Frame_3 = Instance.new("Frame")
+G.Frame_3.Active = true
+G.Frame_3.AnchorPoint = Vector2.new(0.5, 0.5)
+G.Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_3.BackgroundTransparency = 1
+G.Frame_3.BorderSizePixel = 0
+G.Frame_3.Position = UDim2.new(1, 0, 1, 0)
+G.Frame_3.Size = UDim2.new(0, 32, 0, 32)
+G.Frame_3.ZIndex = 99
+G.Frame_3.Parent = G.Background
+
+-- ImageLabel_2 (ImageLabel)
+G.ImageLabel_2 = Instance.new("ImageLabel")
+G.ImageLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+G.ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageLabel_2.BackgroundTransparency = 1
+G.ImageLabel_2.BorderSizePixel = 0
+G.ImageLabel_2.Position = UDim2.new(0.5, -16, 0.5, -16)
+G.ImageLabel_2.Size = UDim2.new(0, 96, 0, 96)
+G.ImageLabel_2.Image = "rbxassetid://120997033468887"
+G.ImageLabel_2.ImageTransparency = 0.80000001192092896
+G.ImageLabel_2.Parent = G.Frame_3
+
+-- UICorner (UICorner)
+G.UICorner = Instance.new("UICorner")
+G.UICorner.CornerRadius = UDim.new(0, 16)
+G.UICorner.Parent = G.Frame
+
+-- ImageLabel_3 (ImageLabel)
+G.ImageLabel_3 = Instance.new("ImageLabel")
+G.ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageLabel_3.BackgroundTransparency = 1
+G.ImageLabel_3.BorderSizePixel = 0
+G.ImageLabel_3.Size = UDim2.new(1, 0, 1, 0)
+G.ImageLabel_3.ZIndex = -100
+G.ImageLabel_3.Visible = false
+G.ImageLabel_3.Image = "rbxassetid://89641024074289"
+G.ImageLabel_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+G.ImageLabel_3.ImageTransparency = 1
+G.ImageLabel_3.ScaleType = Enum.ScaleType.Slice
+G.ImageLabel_3.SliceCenter = Rect.new(460, 460, 460, 460)
+G.ImageLabel_3.SliceScale = 0.05161290243268013
+G.ImageLabel_3.Parent = G.Frame
+
+-- ImageLabel_4 (ImageLabel)
+G.ImageLabel_4 = Instance.new("ImageLabel")
+G.ImageLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+G.ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageLabel_4.BackgroundTransparency = 1
+G.ImageLabel_4.BorderSizePixel = 0
+G.ImageLabel_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+G.ImageLabel_4.Size = UDim2.new(0, 70, 0, 70)
+G.ImageLabel_4.Image = "rbxassetid://137492887754537"
+G.ImageLabel_4.ImageTransparency = 1
+G.ImageLabel_4.Parent = G.ImageLabel_3
+
+-- ImageLabel_5 (ImageLabel)
+G.ImageLabel_5 = Instance.new("ImageLabel")
+G.ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageLabel_5.BackgroundTransparency = 1
+G.ImageLabel_5.BorderSizePixel = 0
+G.ImageLabel_5.Size = UDim2.new(1, 0, 1, 0)
+G.ImageLabel_5.ZIndex = -100
+G.ImageLabel_5.Visible = false
+G.ImageLabel_5.Image = "rbxassetid://89641024074289"
+G.ImageLabel_5.ImageColor3 = Color3.fromRGB(0, 0, 0)
+G.ImageLabel_5.ImageTransparency = 1
+G.ImageLabel_5.ScaleType = Enum.ScaleType.Slice
+G.ImageLabel_5.SliceCenter = Rect.new(460, 460, 460, 460)
+G.ImageLabel_5.SliceScale = 0.05161290243268013
+G.ImageLabel_5.Parent = G.Frame
+
+-- Main (Frame)
+G.Main = Instance.new("Frame")
+G.Main.Name = "Main"
+G.Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Main.BackgroundTransparency = 1
+G.Main.BorderSizePixel = 0
+G.Main.Size = UDim2.new(1, 0, 1, 0)
+G.Main.ZIndex = 100
+G.Main.Parent = G.Frame
+
+-- UICorner_2 (UICorner)
+G.UICorner_2 = Instance.new("UICorner")
+G.UICorner_2.CornerRadius = UDim.new(0, 16)
+G.UICorner_2.Parent = G.Main
+
+-- Frame_4 (Frame)
+G.Frame_4 = Instance.new("Frame")
+G.Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_4.BackgroundTransparency = 1
+G.Frame_4.BorderSizePixel = 0
+G.Frame_4.Position = UDim2.new(0, 0, 0, 52)
+G.Frame_4.Size = UDim2.new(0, 200, 1, -52)
+G.Frame_4.Parent = G.Main
+
+-- Content (Frame)
+G.Content = Instance.new("Frame")
+G.Content.Name = "Content"
+G.Content.AnchorPoint = Vector2.new(0, 1)
+G.Content.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Content.BackgroundTransparency = 1
+G.Content.BorderSizePixel = 0
+G.Content.Position = UDim2.new(0, 0, 1, -7)
+G.Content.Size = UDim2.new(1, 0, 1, -59)
+G.Content.Parent = G.Frame_4
+
+-- ScrollingFrame (ScrollingFrame)
+G.ScrollingFrame = Instance.new("ScrollingFrame")
+G.ScrollingFrame.AnchorPoint = Vector2.new(0, 1)
+G.ScrollingFrame.BackgroundTransparency = 1
+G.ScrollingFrame.BorderSizePixel = 0
+G.ScrollingFrame.Position = UDim2.new(0, 0, 1, 0)
+G.ScrollingFrame.Size = UDim2.new(1, 0, 1, -45)
+G.ScrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
+G.ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+G.ScrollingFrame.ElasticBehavior = Enum.ElasticBehavior.Never
+G.ScrollingFrame.ScrollBarImageTransparency = 1
+G.ScrollingFrame.ScrollBarThickness = 0
+G.ScrollingFrame.ScrollingDirection = Enum.ScrollingDirection.Y
+G.ScrollingFrame.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+G.ScrollingFrame.Parent = G.Frame_4
+
+-- Frame_5 (Frame)
+G.Frame_5 = Instance.new("Frame")
+G.Frame_5.AutomaticSize = Enum.AutomaticSize.Y
+G.Frame_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_5.BackgroundTransparency = 1
+G.Frame_5.BorderSizePixel = 0
+G.Frame_5.Size = UDim2.new(1, 0, 0, 0)
+G.Frame_5.Parent = G.ScrollingFrame
+
+-- UIPadding (UIPadding)
+G.UIPadding = Instance.new("UIPadding")
+G.UIPadding.PaddingBottom = UDim.new(0, 7)
+G.UIPadding.Parent = G.Frame_5
+
+-- UIListLayout (UIListLayout)
+G.UIListLayout = Instance.new("UIListLayout")
+G.UIListLayout.Padding = UDim.new(0, 5)
+G.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+G.UIListLayout.Parent = G.Frame_5
+
+-- Frame_6 (Frame)
+G.Frame_6 = Instance.new("Frame")
+G.Frame_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_6.BackgroundTransparency = 1
+G.Frame_6.BorderSizePixel = 0
+G.Frame_6.ClipsDescendants = true
+G.Frame_6.Size = UDim2.new(1, 0, 0, 161)
+G.Frame_6.Parent = G.Frame_5
+
+-- TextButton (TextButton)
+G.TextButton = Instance.new("TextButton")
+G.TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.TextButton.BackgroundTransparency = 1
+G.TextButton.BorderSizePixel = 0
+G.TextButton.Size = UDim2.new(1, 0, 0, 42)
+G.TextButton.AutoButtonColor = false
+G.TextButton.Text = ""
+G.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+G.TextButton.TextSize = 14
+G.TextButton.Parent = G.Frame_6
+
+-- TextLabel (TextLabel)
+G.TextLabel = Instance.new("TextLabel")
+G.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel.BackgroundTransparency = 1
+G.TextLabel.BorderSizePixel = 0
+G.TextLabel.Size = UDim2.new(1, -28, 1, 0)
+G.TextLabel.FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
+G.TextLabel.RichText = true
+G.TextLabel.Text = "Legit:"
+G.TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel.TextSize = 14
+G.TextLabel.TextTransparency = 0.69999998807907104
+G.TextLabel.TextWrapped = true
+G.TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+G.TextLabel.Parent = G.TextButton
+
+-- UIListLayout_2 (UIListLayout)
+G.UIListLayout_2 = Instance.new("UIListLayout")
+G.UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
+G.UIListLayout_2.Padding = UDim.new(0, 10)
+G.UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+G.UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
+G.UIListLayout_2.Parent = G.TextButton
+
+-- Frame_7 (Frame)
+G.Frame_7 = Instance.new("Frame")
+G.Frame_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_7.BackgroundTransparency = 1
+G.Frame_7.BorderSizePixel = 0
+G.Frame_7.Size = UDim2.new(0, 18, 0, 18)
+G.Frame_7.Parent = G.TextButton
+
+-- ImageLabel_6 (ImageLabel)
+G.ImageLabel_6 = Instance.new("ImageLabel")
+G.ImageLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageLabel_6.BackgroundTransparency = 1
+G.ImageLabel_6.BorderSizePixel = 0
+G.ImageLabel_6.Rotation = 180
+G.ImageLabel_6.Size = UDim2.new(1, 0, 1, 0)
+G.ImageLabel_6.Image = "rbxassetid://134243273101015"
+G.ImageLabel_6.ImageColor3 = Color3.fromRGB(161, 161, 170)
+G.ImageLabel_6.ImageTransparency = 0.69999998807907104
+G.ImageLabel_6.Parent = G.Frame_7
+
+-- UIPadding_2 (UIPadding)
+G.UIPadding_2 = Instance.new("UIPadding")
+G.UIPadding_2.PaddingLeft = UDim.new(0, 11)
+G.UIPadding_2.PaddingRight = UDim.new(0, 11)
+G.UIPadding_2.Parent = G.TextButton
+
+-- Content_2 (Frame)
+G.Content_2 = Instance.new("Frame")
+G.Content_2.Name = "Content"
+G.Content_2.AutomaticSize = Enum.AutomaticSize.Y
+G.Content_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Content_2.BackgroundTransparency = 1
+G.Content_2.BorderSizePixel = 0
+G.Content_2.Position = UDim2.new(0, 0, 0, 42)
+G.Content_2.Size = UDim2.new(1, 0, 0, 0)
+G.Content_2.Parent = G.Frame_6
+
+-- UIListLayout_3 (UIListLayout)
+G.UIListLayout_3 = Instance.new("UIListLayout")
+G.UIListLayout_3.Padding = UDim.new(0, 5)
+G.UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+G.UIListLayout_3.VerticalAlignment = Enum.VerticalAlignment.Bottom
+G.UIListLayout_3.Parent = G.Content_2
+
+-- ImageButton (ImageButton)
+G.ImageButton = Instance.new("ImageButton")
+G.ImageButton.AutomaticSize = Enum.AutomaticSize.Y
+G.ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageButton.BackgroundTransparency = 1
+G.ImageButton.BorderSizePixel = 0
+G.ImageButton.Size = UDim2.new(1, -7, 0, 0)
+G.ImageButton.AutoButtonColor = false
+G.ImageButton.Image = "rbxassetid://125083578015333"
+G.ImageButton.ImageTransparency = 0.93000000715255737
+G.ImageButton.ScaleType = Enum.ScaleType.Slice
+G.ImageButton.SliceCenter = Rect.new(512, 325, 512, 325)
+G.ImageButton.SliceScale = 0.027692306786775589
+G.ImageButton.Parent = G.Content_2
+
+-- Outline (ImageLabel)
+G.Outline = Instance.new("ImageLabel")
+G.Outline.Name = "Outline"
+G.Outline.AnchorPoint = Vector2.new(0.5, 0.5)
+G.Outline.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Outline.BackgroundTransparency = 1
+G.Outline.BorderSizePixel = 0
+G.Outline.Position = UDim2.new(0.5, 0, 0.5, 0)
+G.Outline.Size = UDim2.new(1, 1, 1, 1)
+G.Outline.Image = "rbxassetid://131126436897551"
+G.Outline.ImageTransparency = 1
+G.Outline.ScaleType = Enum.ScaleType.Slice
+G.Outline.SliceCenter = Rect.new(512, 512, 512, 512)
+G.Outline.SliceScale = 0.025806451216340065
+G.Outline.Parent = G.ImageButton
+
+-- Frame_8 (ImageLabel)
+G.Frame_8 = Instance.new("ImageLabel")
+G.Frame_8.Name = "Frame"
+G.Frame_8.AutomaticSize = Enum.AutomaticSize.Y
+G.Frame_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_8.BackgroundTransparency = 1
+G.Frame_8.BorderSizePixel = 0
+G.Frame_8.Size = UDim2.new(1, 0, 0, 0)
+G.Frame_8.Image = "rbxassetid://125083578015333"
+G.Frame_8.ImageTransparency = 1
+G.Frame_8.ScaleType = Enum.ScaleType.Slice
+G.Frame_8.SliceCenter = Rect.new(512, 325, 512, 325)
+G.Frame_8.SliceScale = 0.027692306786775589
+G.Frame_8.Parent = G.ImageButton
+
+-- UIListLayout_4 (UIListLayout)
+G.UIListLayout_4 = Instance.new("UIListLayout")
+G.UIListLayout_4.FillDirection = Enum.FillDirection.Horizontal
+G.UIListLayout_4.Padding = UDim.new(0, 9)
+G.UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+G.UIListLayout_4.VerticalAlignment = Enum.VerticalAlignment.Center
+G.UIListLayout_4.Parent = G.Frame_8
+
+-- TextLabel_2 (TextLabel)
+G.TextLabel_2 = Instance.new("TextLabel")
+G.TextLabel_2.AutomaticSize = Enum.AutomaticSize.Y
+G.TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_2.BackgroundTransparency = 1
+G.TextLabel_2.BorderSizePixel = 0
+G.TextLabel_2.LayoutOrder = 2
+G.TextLabel_2.Size = UDim2.new(1, -25, 0, 0)
+G.TextLabel_2.FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.Medium, Enum.FontStyle.Normal)
+G.TextLabel_2.RichText = true
+G.TextLabel_2.Text = "General"
+G.TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_2.TextSize = 15
+G.TextLabel_2.TextWrapped = true
+G.TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+G.TextLabel_2.Parent = G.Frame_8
+
+-- UIPadding_3 (UIPadding)
+G.UIPadding_3 = Instance.new("UIPadding")
+G.UIPadding_3.Parent = G.TextLabel_2
+
+-- UIPadding_4 (UIPadding)
+G.UIPadding_4 = Instance.new("UIPadding")
+G.UIPadding_4.PaddingBottom = UDim.new(0, 10)
+G.UIPadding_4.PaddingLeft = UDim.new(0, 11)
+G.UIPadding_4.PaddingRight = UDim.new(0, 11)
+G.UIPadding_4.PaddingTop = UDim.new(0, 10)
+G.UIPadding_4.Parent = G.Frame_8
+
+-- Frame_9 (Frame)
+G.Frame_9 = Instance.new("Frame")
+G.Frame_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_9.BackgroundTransparency = 1
+G.Frame_9.BorderSizePixel = 0
+G.Frame_9.Size = UDim2.new(0, 16, 0, 16)
+G.Frame_9.Parent = G.Frame_8
+
+-- ImageLabel_7 (ImageLabel)
+G.ImageLabel_7 = Instance.new("ImageLabel")
+G.ImageLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageLabel_7.BackgroundTransparency = 1
+G.ImageLabel_7.BorderSizePixel = 0
+G.ImageLabel_7.Size = UDim2.new(1, 0, 1, 0)
+G.ImageLabel_7.Image = "rbxassetid://125020872044147"
+G.ImageLabel_7.ImageColor3 = Color3.fromRGB(161, 161, 170)
+G.ImageLabel_7.ImageTransparency = 0.10000000149011612
+G.ImageLabel_7.Parent = G.Frame_9
+
+-- ImageButton_2 (ImageButton)
+G.ImageButton_2 = Instance.new("ImageButton")
+G.ImageButton_2.AutomaticSize = Enum.AutomaticSize.Y
+G.ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageButton_2.BackgroundTransparency = 1
+G.ImageButton_2.BorderSizePixel = 0
+G.ImageButton_2.Size = UDim2.new(1, -7, 0, 0)
+G.ImageButton_2.AutoButtonColor = false
+G.ImageButton_2.Image = "rbxassetid://125083578015333"
+G.ImageButton_2.ImageTransparency = 1
+G.ImageButton_2.ScaleType = Enum.ScaleType.Slice
+G.ImageButton_2.SliceCenter = Rect.new(512, 325, 512, 325)
+G.ImageButton_2.SliceScale = 0.027692306786775589
+G.ImageButton_2.Parent = G.Content_2
+
+-- Outline_2 (ImageLabel)
+G.Outline_2 = Instance.new("ImageLabel")
+G.Outline_2.Name = "Outline"
+G.Outline_2.AnchorPoint = Vector2.new(0.5, 0.5)
+G.Outline_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Outline_2.BackgroundTransparency = 1
+G.Outline_2.BorderSizePixel = 0
+G.Outline_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+G.Outline_2.Size = UDim2.new(1, 1, 1, 1)
+G.Outline_2.Image = "rbxassetid://131126436897551"
+G.Outline_2.ImageTransparency = 1
+G.Outline_2.ScaleType = Enum.ScaleType.Slice
+G.Outline_2.SliceCenter = Rect.new(512, 512, 512, 512)
+G.Outline_2.SliceScale = 0.025806451216340065
+G.Outline_2.Parent = G.ImageButton_2
+
+-- Frame_10 (ImageLabel)
+G.Frame_10 = Instance.new("ImageLabel")
+G.Frame_10.Name = "Frame"
+G.Frame_10.AutomaticSize = Enum.AutomaticSize.Y
+G.Frame_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_10.BackgroundTransparency = 1
+G.Frame_10.BorderSizePixel = 0
+G.Frame_10.Size = UDim2.new(1, 0, 0, 0)
+G.Frame_10.Image = "rbxassetid://125083578015333"
+G.Frame_10.ImageTransparency = 1
+G.Frame_10.ScaleType = Enum.ScaleType.Slice
+G.Frame_10.SliceCenter = Rect.new(512, 325, 512, 325)
+G.Frame_10.SliceScale = 0.027692306786775589
+G.Frame_10.Parent = G.ImageButton_2
+
+-- UIListLayout_5 (UIListLayout)
+G.UIListLayout_5 = Instance.new("UIListLayout")
+G.UIListLayout_5.FillDirection = Enum.FillDirection.Horizontal
+G.UIListLayout_5.Padding = UDim.new(0, 9)
+G.UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+G.UIListLayout_5.VerticalAlignment = Enum.VerticalAlignment.Center
+G.UIListLayout_5.Parent = G.Frame_10
+
+-- TextLabel_3 (TextLabel)
+G.TextLabel_3 = Instance.new("TextLabel")
+G.TextLabel_3.AutomaticSize = Enum.AutomaticSize.Y
+G.TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_3.BackgroundTransparency = 1
+G.TextLabel_3.BorderSizePixel = 0
+G.TextLabel_3.LayoutOrder = 2
+G.TextLabel_3.Size = UDim2.new(1, -25, 0, 0)
+G.TextLabel_3.FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.Medium, Enum.FontStyle.Normal)
+G.TextLabel_3.RichText = true
+G.TextLabel_3.Text = "Combat"
+G.TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_3.TextSize = 15
+G.TextLabel_3.TextTransparency = 0.30000001192092896
+G.TextLabel_3.TextWrapped = true
+G.TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+G.TextLabel_3.Parent = G.Frame_10
+
+-- UIPadding_5 (UIPadding)
+G.UIPadding_5 = Instance.new("UIPadding")
+G.UIPadding_5.Parent = G.TextLabel_3
+
+-- UIPadding_6 (UIPadding)
+G.UIPadding_6 = Instance.new("UIPadding")
+G.UIPadding_6.PaddingBottom = UDim.new(0, 10)
+G.UIPadding_6.PaddingLeft = UDim.new(0, 11)
+G.UIPadding_6.PaddingRight = UDim.new(0, 11)
+G.UIPadding_6.PaddingTop = UDim.new(0, 10)
+G.UIPadding_6.Parent = G.Frame_10
+
+-- Frame_11 (Frame)
+G.Frame_11 = Instance.new("Frame")
+G.Frame_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_11.BackgroundTransparency = 1
+G.Frame_11.BorderSizePixel = 0
+G.Frame_11.Size = UDim2.new(0, 16, 0, 16)
+G.Frame_11.Parent = G.Frame_10
+
+-- ImageLabel_8 (ImageLabel)
+G.ImageLabel_8 = Instance.new("ImageLabel")
+G.ImageLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageLabel_8.BackgroundTransparency = 1
+G.ImageLabel_8.BorderSizePixel = 0
+G.ImageLabel_8.Size = UDim2.new(1, 0, 1, 0)
+G.ImageLabel_8.Image = "rbxassetid://81872698913435"
+G.ImageLabel_8.ImageColor3 = Color3.fromRGB(161, 161, 170)
+G.ImageLabel_8.ImageTransparency = 0.40000000596046448
+G.ImageLabel_8.Parent = G.Frame_11
+
+-- ImageButton_3 (ImageButton)
+G.ImageButton_3 = Instance.new("ImageButton")
+G.ImageButton_3.AutomaticSize = Enum.AutomaticSize.Y
+G.ImageButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageButton_3.BackgroundTransparency = 1
+G.ImageButton_3.BorderSizePixel = 0
+G.ImageButton_3.Size = UDim2.new(1, -7, 0, 0)
+G.ImageButton_3.AutoButtonColor = false
+G.ImageButton_3.Image = "rbxassetid://125083578015333"
+G.ImageButton_3.ImageTransparency = 1
+G.ImageButton_3.ScaleType = Enum.ScaleType.Slice
+G.ImageButton_3.SliceCenter = Rect.new(512, 325, 512, 325)
+G.ImageButton_3.SliceScale = 0.027692306786775589
+G.ImageButton_3.Parent = G.Content_2
+
+-- Outline_3 (ImageLabel)
+G.Outline_3 = Instance.new("ImageLabel")
+G.Outline_3.Name = "Outline"
+G.Outline_3.AnchorPoint = Vector2.new(0.5, 0.5)
+G.Outline_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Outline_3.BackgroundTransparency = 1
+G.Outline_3.BorderSizePixel = 0
+G.Outline_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+G.Outline_3.Size = UDim2.new(1, 1, 1, 1)
+G.Outline_3.Image = "rbxassetid://131126436897551"
+G.Outline_3.ImageTransparency = 1
+G.Outline_3.ScaleType = Enum.ScaleType.Slice
+G.Outline_3.SliceCenter = Rect.new(512, 512, 512, 512)
+G.Outline_3.SliceScale = 0.025806451216340065
+G.Outline_3.Parent = G.ImageButton_3
+
+-- Frame_12 (ImageLabel)
+G.Frame_12 = Instance.new("ImageLabel")
+G.Frame_12.Name = "Frame"
+G.Frame_12.AutomaticSize = Enum.AutomaticSize.Y
+G.Frame_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_12.BackgroundTransparency = 1
+G.Frame_12.BorderSizePixel = 0
+G.Frame_12.Size = UDim2.new(1, 0, 0, 0)
+G.Frame_12.Image = "rbxassetid://125083578015333"
+G.Frame_12.ImageTransparency = 1
+G.Frame_12.ScaleType = Enum.ScaleType.Slice
+G.Frame_12.SliceCenter = Rect.new(512, 325, 512, 325)
+G.Frame_12.SliceScale = 0.027692306786775589
+G.Frame_12.Parent = G.ImageButton_3
+
+-- UIListLayout_6 (UIListLayout)
+G.UIListLayout_6 = Instance.new("UIListLayout")
+G.UIListLayout_6.FillDirection = Enum.FillDirection.Horizontal
+G.UIListLayout_6.Padding = UDim.new(0, 9)
+G.UIListLayout_6.SortOrder = Enum.SortOrder.LayoutOrder
+G.UIListLayout_6.VerticalAlignment = Enum.VerticalAlignment.Center
+G.UIListLayout_6.Parent = G.Frame_12
+
+-- TextLabel_4 (TextLabel)
+G.TextLabel_4 = Instance.new("TextLabel")
+G.TextLabel_4.AutomaticSize = Enum.AutomaticSize.Y
+G.TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_4.BackgroundTransparency = 1
+G.TextLabel_4.BorderSizePixel = 0
+G.TextLabel_4.LayoutOrder = 2
+G.TextLabel_4.Size = UDim2.new(1, -25, 0, 0)
+G.TextLabel_4.FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.Medium, Enum.FontStyle.Normal)
+G.TextLabel_4.RichText = true
+G.TextLabel_4.Text = "ESP"
+G.TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_4.TextSize = 15
+G.TextLabel_4.TextTransparency = 0.30000001192092896
+G.TextLabel_4.TextWrapped = true
+G.TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+G.TextLabel_4.Parent = G.Frame_12
+
+-- UIPadding_7 (UIPadding)
+G.UIPadding_7 = Instance.new("UIPadding")
+G.UIPadding_7.Parent = G.TextLabel_4
+
+-- UIPadding_8 (UIPadding)
+G.UIPadding_8 = Instance.new("UIPadding")
+G.UIPadding_8.PaddingBottom = UDim.new(0, 10)
+G.UIPadding_8.PaddingLeft = UDim.new(0, 11)
+G.UIPadding_8.PaddingRight = UDim.new(0, 11)
+G.UIPadding_8.PaddingTop = UDim.new(0, 10)
+G.UIPadding_8.Parent = G.Frame_12
+
+-- Frame_13 (Frame)
+G.Frame_13 = Instance.new("Frame")
+G.Frame_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_13.BackgroundTransparency = 1
+G.Frame_13.BorderSizePixel = 0
+G.Frame_13.Size = UDim2.new(0, 16, 0, 16)
+G.Frame_13.Parent = G.Frame_12
+
+-- ImageLabel_9 (ImageLabel)
+G.ImageLabel_9 = Instance.new("ImageLabel")
+G.ImageLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageLabel_9.BackgroundTransparency = 1
+G.ImageLabel_9.BorderSizePixel = 0
+G.ImageLabel_9.Size = UDim2.new(1, 0, 1, 0)
+G.ImageLabel_9.Image = "rbxassetid://100033680381365"
+G.ImageLabel_9.ImageColor3 = Color3.fromRGB(161, 161, 170)
+G.ImageLabel_9.ImageTransparency = 0.40000000596046448
+G.ImageLabel_9.Parent = G.Frame_13
+
+-- Frame_14 (Frame)
+G.Frame_14 = Instance.new("Frame")
+G.Frame_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_14.BackgroundTransparency = 1
+G.Frame_14.BorderSizePixel = 0
+G.Frame_14.ClipsDescendants = true
+G.Frame_14.Size = UDim2.new(1, 0, 0, 119)
+G.Frame_14.Parent = G.Frame_5
+
+-- TextButton_2 (TextButton)
+G.TextButton_2 = Instance.new("TextButton")
+G.TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.TextButton_2.BackgroundTransparency = 1
+G.TextButton_2.BorderSizePixel = 0
+G.TextButton_2.Size = UDim2.new(1, 0, 0, 42)
+G.TextButton_2.AutoButtonColor = false
+G.TextButton_2.Text = ""
+G.TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+G.TextButton_2.TextSize = 14
+G.TextButton_2.Parent = G.Frame_14
+
+-- TextLabel_5 (TextLabel)
+G.TextLabel_5 = Instance.new("TextLabel")
+G.TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_5.BackgroundTransparency = 1
+G.TextLabel_5.BorderSizePixel = 0
+G.TextLabel_5.Size = UDim2.new(1, -28, 1, 0)
+G.TextLabel_5.FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
+G.TextLabel_5.RichText = true
+G.TextLabel_5.Text = "Rage:"
+G.TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_5.TextSize = 14
+G.TextLabel_5.TextTransparency = 0.69999998807907104
+G.TextLabel_5.TextWrapped = true
+G.TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+G.TextLabel_5.Parent = G.TextButton_2
+
+-- UIListLayout_7 (UIListLayout)
+G.UIListLayout_7 = Instance.new("UIListLayout")
+G.UIListLayout_7.FillDirection = Enum.FillDirection.Horizontal
+G.UIListLayout_7.Padding = UDim.new(0, 10)
+G.UIListLayout_7.SortOrder = Enum.SortOrder.LayoutOrder
+G.UIListLayout_7.VerticalAlignment = Enum.VerticalAlignment.Center
+G.UIListLayout_7.Parent = G.TextButton_2
+
+-- Frame_15 (Frame)
+G.Frame_15 = Instance.new("Frame")
+G.Frame_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_15.BackgroundTransparency = 1
+G.Frame_15.BorderSizePixel = 0
+G.Frame_15.Size = UDim2.new(0, 18, 0, 18)
+G.Frame_15.Parent = G.TextButton_2
+
+-- ImageLabel_10 (ImageLabel)
+G.ImageLabel_10 = Instance.new("ImageLabel")
+G.ImageLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageLabel_10.BackgroundTransparency = 1
+G.ImageLabel_10.BorderSizePixel = 0
+G.ImageLabel_10.Rotation = 180
+G.ImageLabel_10.Size = UDim2.new(1, 0, 1, 0)
+G.ImageLabel_10.Image = "rbxassetid://134243273101015"
+G.ImageLabel_10.ImageColor3 = Color3.fromRGB(161, 161, 170)
+G.ImageLabel_10.ImageTransparency = 0.69999998807907104
+G.ImageLabel_10.Parent = G.Frame_15
+
+-- UIPadding_9 (UIPadding)
+G.UIPadding_9 = Instance.new("UIPadding")
+G.UIPadding_9.PaddingLeft = UDim.new(0, 11)
+G.UIPadding_9.PaddingRight = UDim.new(0, 11)
+G.UIPadding_9.Parent = G.TextButton_2
+
+-- Content_3 (Frame)
+G.Content_3 = Instance.new("Frame")
+G.Content_3.Name = "Content"
+G.Content_3.AutomaticSize = Enum.AutomaticSize.Y
+G.Content_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Content_3.BackgroundTransparency = 1
+G.Content_3.BorderSizePixel = 0
+G.Content_3.Position = UDim2.new(0, 0, 0, 42)
+G.Content_3.Size = UDim2.new(1, 0, 0, 0)
+G.Content_3.Parent = G.Frame_14
+
+-- UIListLayout_8 (UIListLayout)
+G.UIListLayout_8 = Instance.new("UIListLayout")
+G.UIListLayout_8.Padding = UDim.new(0, 5)
+G.UIListLayout_8.SortOrder = Enum.SortOrder.LayoutOrder
+G.UIListLayout_8.VerticalAlignment = Enum.VerticalAlignment.Bottom
+G.UIListLayout_8.Parent = G.Content_3
+
+-- ImageButton_4 (ImageButton)
+G.ImageButton_4 = Instance.new("ImageButton")
+G.ImageButton_4.AutomaticSize = Enum.AutomaticSize.Y
+G.ImageButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageButton_4.BackgroundTransparency = 1
+G.ImageButton_4.BorderSizePixel = 0
+G.ImageButton_4.Size = UDim2.new(1, -7, 0, 0)
+G.ImageButton_4.AutoButtonColor = false
+G.ImageButton_4.Image = "rbxassetid://125083578015333"
+G.ImageButton_4.ImageTransparency = 1
+G.ImageButton_4.ScaleType = Enum.ScaleType.Slice
+G.ImageButton_4.SliceCenter = Rect.new(512, 325, 512, 325)
+G.ImageButton_4.SliceScale = 0.027692306786775589
+G.ImageButton_4.Parent = G.Content_3
+
+-- Outline_4 (ImageLabel)
+G.Outline_4 = Instance.new("ImageLabel")
+G.Outline_4.Name = "Outline"
+G.Outline_4.AnchorPoint = Vector2.new(0.5, 0.5)
+G.Outline_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Outline_4.BackgroundTransparency = 1
+G.Outline_4.BorderSizePixel = 0
+G.Outline_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+G.Outline_4.Size = UDim2.new(1, 1, 1, 1)
+G.Outline_4.Image = "rbxassetid://131126436897551"
+G.Outline_4.ImageTransparency = 1
+G.Outline_4.ScaleType = Enum.ScaleType.Slice
+G.Outline_4.SliceCenter = Rect.new(512, 512, 512, 512)
+G.Outline_4.SliceScale = 0.025806451216340065
+G.Outline_4.Parent = G.ImageButton_4
+
+-- Frame_16 (ImageLabel)
+G.Frame_16 = Instance.new("ImageLabel")
+G.Frame_16.Name = "Frame"
+G.Frame_16.AutomaticSize = Enum.AutomaticSize.Y
+G.Frame_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_16.BackgroundTransparency = 1
+G.Frame_16.BorderSizePixel = 0
+G.Frame_16.Size = UDim2.new(1, 0, 0, 0)
+G.Frame_16.Image = "rbxassetid://125083578015333"
+G.Frame_16.ImageTransparency = 1
+G.Frame_16.ScaleType = Enum.ScaleType.Slice
+G.Frame_16.SliceCenter = Rect.new(512, 325, 512, 325)
+G.Frame_16.SliceScale = 0.027692306786775589
+G.Frame_16.Parent = G.ImageButton_4
+
+-- UIListLayout_9 (UIListLayout)
+G.UIListLayout_9 = Instance.new("UIListLayout")
+G.UIListLayout_9.FillDirection = Enum.FillDirection.Horizontal
+G.UIListLayout_9.Padding = UDim.new(0, 9)
+G.UIListLayout_9.SortOrder = Enum.SortOrder.LayoutOrder
+G.UIListLayout_9.VerticalAlignment = Enum.VerticalAlignment.Center
+G.UIListLayout_9.Parent = G.Frame_16
+
+-- TextLabel_6 (TextLabel)
+G.TextLabel_6 = Instance.new("TextLabel")
+G.TextLabel_6.AutomaticSize = Enum.AutomaticSize.Y
+G.TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_6.BackgroundTransparency = 1
+G.TextLabel_6.BorderSizePixel = 0
+G.TextLabel_6.LayoutOrder = 2
+G.TextLabel_6.Size = UDim2.new(1, -25, 0, 0)
+G.TextLabel_6.FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.Medium, Enum.FontStyle.Normal)
+G.TextLabel_6.RichText = true
+G.TextLabel_6.Text = "Bounty Hunting"
+G.TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_6.TextSize = 15
+G.TextLabel_6.TextTransparency = 0.30000001192092896
+G.TextLabel_6.TextWrapped = true
+G.TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+G.TextLabel_6.Parent = G.Frame_16
+
+-- UIPadding_10 (UIPadding)
+G.UIPadding_10 = Instance.new("UIPadding")
+G.UIPadding_10.Parent = G.TextLabel_6
+
+-- UIPadding_11 (UIPadding)
+G.UIPadding_11 = Instance.new("UIPadding")
+G.UIPadding_11.PaddingBottom = UDim.new(0, 10)
+G.UIPadding_11.PaddingLeft = UDim.new(0, 11)
+G.UIPadding_11.PaddingRight = UDim.new(0, 11)
+G.UIPadding_11.PaddingTop = UDim.new(0, 10)
+G.UIPadding_11.Parent = G.Frame_16
+
+-- Frame_17 (Frame)
+G.Frame_17 = Instance.new("Frame")
+G.Frame_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_17.BackgroundTransparency = 1
+G.Frame_17.BorderSizePixel = 0
+G.Frame_17.Size = UDim2.new(0, 16, 0, 16)
+G.Frame_17.Parent = G.Frame_16
+
+-- ImageLabel_11 (ImageLabel)
+G.ImageLabel_11 = Instance.new("ImageLabel")
+G.ImageLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageLabel_11.BackgroundTransparency = 1
+G.ImageLabel_11.BorderSizePixel = 0
+G.ImageLabel_11.Size = UDim2.new(1, 0, 1, 0)
+G.ImageLabel_11.Image = "rbxassetid://137726256442333"
+G.ImageLabel_11.ImageColor3 = Color3.fromRGB(161, 161, 170)
+G.ImageLabel_11.ImageTransparency = 0.40000000596046448
+G.ImageLabel_11.Parent = G.Frame_17
+
+-- ImageButton_5 (ImageButton)
+G.ImageButton_5 = Instance.new("ImageButton")
+G.ImageButton_5.AutomaticSize = Enum.AutomaticSize.Y
+G.ImageButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageButton_5.BackgroundTransparency = 1
+G.ImageButton_5.BorderSizePixel = 0
+G.ImageButton_5.Size = UDim2.new(1, -7, 0, 0)
+G.ImageButton_5.AutoButtonColor = false
+G.ImageButton_5.Image = "rbxassetid://125083578015333"
+G.ImageButton_5.ImageTransparency = 1
+G.ImageButton_5.ScaleType = Enum.ScaleType.Slice
+G.ImageButton_5.SliceCenter = Rect.new(512, 325, 512, 325)
+G.ImageButton_5.SliceScale = 0.027692306786775589
+G.ImageButton_5.Parent = G.Content_3
+
+-- Outline_5 (ImageLabel)
+G.Outline_5 = Instance.new("ImageLabel")
+G.Outline_5.Name = "Outline"
+G.Outline_5.AnchorPoint = Vector2.new(0.5, 0.5)
+G.Outline_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Outline_5.BackgroundTransparency = 1
+G.Outline_5.BorderSizePixel = 0
+G.Outline_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+G.Outline_5.Size = UDim2.new(1, 1, 1, 1)
+G.Outline_5.Image = "rbxassetid://131126436897551"
+G.Outline_5.ImageTransparency = 1
+G.Outline_5.ScaleType = Enum.ScaleType.Slice
+G.Outline_5.SliceCenter = Rect.new(512, 512, 512, 512)
+G.Outline_5.SliceScale = 0.025806451216340065
+G.Outline_5.Parent = G.ImageButton_5
+
+-- Frame_18 (ImageLabel)
+G.Frame_18 = Instance.new("ImageLabel")
+G.Frame_18.Name = "Frame"
+G.Frame_18.AutomaticSize = Enum.AutomaticSize.Y
+G.Frame_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_18.BackgroundTransparency = 1
+G.Frame_18.BorderSizePixel = 0
+G.Frame_18.Size = UDim2.new(1, 0, 0, 0)
+G.Frame_18.Image = "rbxassetid://125083578015333"
+G.Frame_18.ImageTransparency = 1
+G.Frame_18.ScaleType = Enum.ScaleType.Slice
+G.Frame_18.SliceCenter = Rect.new(512, 325, 512, 325)
+G.Frame_18.SliceScale = 0.027692306786775589
+G.Frame_18.Parent = G.ImageButton_5
+
+-- UIListLayout_10 (UIListLayout)
+G.UIListLayout_10 = Instance.new("UIListLayout")
+G.UIListLayout_10.FillDirection = Enum.FillDirection.Horizontal
+G.UIListLayout_10.Padding = UDim.new(0, 9)
+G.UIListLayout_10.SortOrder = Enum.SortOrder.LayoutOrder
+G.UIListLayout_10.VerticalAlignment = Enum.VerticalAlignment.Center
+G.UIListLayout_10.Parent = G.Frame_18
+
+-- TextLabel_7 (TextLabel)
+G.TextLabel_7 = Instance.new("TextLabel")
+G.TextLabel_7.AutomaticSize = Enum.AutomaticSize.Y
+G.TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_7.BackgroundTransparency = 1
+G.TextLabel_7.BorderSizePixel = 0
+G.TextLabel_7.LayoutOrder = 2
+G.TextLabel_7.Size = UDim2.new(1, -25, 0, 0)
+G.TextLabel_7.FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.Medium, Enum.FontStyle.Normal)
+G.TextLabel_7.RichText = true
+G.TextLabel_7.Text = "Skills"
+G.TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_7.TextSize = 15
+G.TextLabel_7.TextTransparency = 0.30000001192092896
+G.TextLabel_7.TextWrapped = true
+G.TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
+G.TextLabel_7.Parent = G.Frame_18
+
+-- UIPadding_12 (UIPadding)
+G.UIPadding_12 = Instance.new("UIPadding")
+G.UIPadding_12.Parent = G.TextLabel_7
+
+-- UIPadding_13 (UIPadding)
+G.UIPadding_13 = Instance.new("UIPadding")
+G.UIPadding_13.PaddingBottom = UDim.new(0, 10)
+G.UIPadding_13.PaddingLeft = UDim.new(0, 11)
+G.UIPadding_13.PaddingRight = UDim.new(0, 11)
+G.UIPadding_13.PaddingTop = UDim.new(0, 10)
+G.UIPadding_13.Parent = G.Frame_18
+
+-- Frame_19 (Frame)
+G.Frame_19 = Instance.new("Frame")
+G.Frame_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_19.BackgroundTransparency = 1
+G.Frame_19.BorderSizePixel = 0
+G.Frame_19.Size = UDim2.new(0, 16, 0, 16)
+G.Frame_19.Parent = G.Frame_18
+
+-- ImageLabel_12 (ImageLabel)
+G.ImageLabel_12 = Instance.new("ImageLabel")
+G.ImageLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageLabel_12.BackgroundTransparency = 1
+G.ImageLabel_12.BorderSizePixel = 0
+G.ImageLabel_12.Size = UDim2.new(1, 0, 1, 0)
+G.ImageLabel_12.Image = "rbxassetid://100664857995498"
+G.ImageLabel_12.ImageColor3 = Color3.fromRGB(161, 161, 170)
+G.ImageLabel_12.ImageTransparency = 0.40000000596046448
+G.ImageLabel_12.Parent = G.Frame_19
+
+-- ImageButton_6 (ImageButton)
+G.ImageButton_6 = Instance.new("ImageButton")
+G.ImageButton_6.AutomaticSize = Enum.AutomaticSize.Y
+G.ImageButton_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageButton_6.BackgroundTransparency = 1
+G.ImageButton_6.BorderSizePixel = 0
+G.ImageButton_6.Size = UDim2.new(1, -7, 0, 0)
+G.ImageButton_6.AutoButtonColor = false
+G.ImageButton_6.Image = "rbxassetid://125083578015333"
+G.ImageButton_6.ImageTransparency = 1
+G.ImageButton_6.ScaleType = Enum.ScaleType.Slice
+G.ImageButton_6.SliceCenter = Rect.new(512, 325, 512, 325)
+G.ImageButton_6.SliceScale = 0.027692306786775589
+G.ImageButton_6.Parent = G.Frame_5
+
+-- Outline_6 (ImageLabel)
+G.Outline_6 = Instance.new("ImageLabel")
+G.Outline_6.Name = "Outline"
+G.Outline_6.AnchorPoint = Vector2.new(0.5, 0.5)
+G.Outline_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Outline_6.BackgroundTransparency = 1
+G.Outline_6.BorderSizePixel = 0
+G.Outline_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+G.Outline_6.Size = UDim2.new(1, 1, 1, 1)
+G.Outline_6.Image = "rbxassetid://131126436897551"
+G.Outline_6.ImageTransparency = 1
+G.Outline_6.ScaleType = Enum.ScaleType.Slice
+G.Outline_6.SliceCenter = Rect.new(512, 512, 512, 512)
+G.Outline_6.SliceScale = 0.025806451216340065
+G.Outline_6.Parent = G.ImageButton_6
+
+-- Frame_20 (ImageLabel)
+G.Frame_20 = Instance.new("ImageLabel")
+G.Frame_20.Name = "Frame"
+G.Frame_20.AutomaticSize = Enum.AutomaticSize.Y
+G.Frame_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_20.BackgroundTransparency = 1
+G.Frame_20.BorderSizePixel = 0
+G.Frame_20.Size = UDim2.new(1, 0, 0, 0)
+G.Frame_20.Image = "rbxassetid://125083578015333"
+G.Frame_20.ImageTransparency = 1
+G.Frame_20.ScaleType = Enum.ScaleType.Slice
+G.Frame_20.SliceCenter = Rect.new(512, 325, 512, 325)
+G.Frame_20.SliceScale = 0.027692306786775589
+G.Frame_20.Parent = G.ImageButton_6
+
+-- UIListLayout_11 (UIListLayout)
+G.UIListLayout_11 = Instance.new("UIListLayout")
+G.UIListLayout_11.FillDirection = Enum.FillDirection.Horizontal
+G.UIListLayout_11.Padding = UDim.new(0, 9)
+G.UIListLayout_11.SortOrder = Enum.SortOrder.LayoutOrder
+G.UIListLayout_11.VerticalAlignment = Enum.VerticalAlignment.Center
+G.UIListLayout_11.Parent = G.Frame_20
+
+-- TextLabel_8 (TextLabel)
+G.TextLabel_8 = Instance.new("TextLabel")
+G.TextLabel_8.AutomaticSize = Enum.AutomaticSize.Y
+G.TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_8.BackgroundTransparency = 1
+G.TextLabel_8.BorderSizePixel = 0
+G.TextLabel_8.LayoutOrder = 2
+G.TextLabel_8.Size = UDim2.new(1, -25, 0, 0)
+G.TextLabel_8.FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.Medium, Enum.FontStyle.Normal)
+G.TextLabel_8.RichText = true
+G.TextLabel_8.Text = "Key Bind"
+G.TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_8.TextSize = 15
+G.TextLabel_8.TextTransparency = 0.30000001192092896
+G.TextLabel_8.TextWrapped = true
+G.TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
+G.TextLabel_8.Parent = G.Frame_20
+
+-- UIPadding_14 (UIPadding)
+G.UIPadding_14 = Instance.new("UIPadding")
+G.UIPadding_14.Parent = G.TextLabel_8
+
+-- UIPadding_15 (UIPadding)
+G.UIPadding_15 = Instance.new("UIPadding")
+G.UIPadding_15.PaddingBottom = UDim.new(0, 10)
+G.UIPadding_15.PaddingLeft = UDim.new(0, 11)
+G.UIPadding_15.PaddingRight = UDim.new(0, 11)
+G.UIPadding_15.PaddingTop = UDim.new(0, 10)
+G.UIPadding_15.Parent = G.Frame_20
+
+-- Frame_21 (Frame)
+G.Frame_21 = Instance.new("Frame")
+G.Frame_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_21.BackgroundTransparency = 1
+G.Frame_21.BorderSizePixel = 0
+G.Frame_21.Size = UDim2.new(0, 16, 0, 16)
+G.Frame_21.Parent = G.Frame_20
+
+-- ImageLabel_13 (ImageLabel)
+G.ImageLabel_13 = Instance.new("ImageLabel")
+G.ImageLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageLabel_13.BackgroundTransparency = 1
+G.ImageLabel_13.BorderSizePixel = 0
+G.ImageLabel_13.Size = UDim2.new(1, 0, 1, 0)
+G.ImageLabel_13.Image = "rbxassetid://121474456068237"
+G.ImageLabel_13.ImageColor3 = Color3.fromRGB(161, 161, 170)
+G.ImageLabel_13.ImageTransparency = 0.40000000596046448
+G.ImageLabel_13.Parent = G.Frame_21
+
+-- ImageButton_7 (ImageButton)
+G.ImageButton_7 = Instance.new("ImageButton")
+G.ImageButton_7.AutomaticSize = Enum.AutomaticSize.Y
+G.ImageButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageButton_7.BackgroundTransparency = 1
+G.ImageButton_7.BorderSizePixel = 0
+G.ImageButton_7.Size = UDim2.new(1, -7, 0, 0)
+G.ImageButton_7.AutoButtonColor = false
+G.ImageButton_7.Image = "rbxassetid://125083578015333"
+G.ImageButton_7.ImageTransparency = 1
+G.ImageButton_7.ScaleType = Enum.ScaleType.Slice
+G.ImageButton_7.SliceCenter = Rect.new(512, 325, 512, 325)
+G.ImageButton_7.SliceScale = 0.027692306786775589
+G.ImageButton_7.Parent = G.Frame_5
+
+-- Outline_7 (ImageLabel)
+G.Outline_7 = Instance.new("ImageLabel")
+G.Outline_7.Name = "Outline"
+G.Outline_7.AnchorPoint = Vector2.new(0.5, 0.5)
+G.Outline_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Outline_7.BackgroundTransparency = 1
+G.Outline_7.BorderSizePixel = 0
+G.Outline_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+G.Outline_7.Size = UDim2.new(1, 1, 1, 1)
+G.Outline_7.Image = "rbxassetid://131126436897551"
+G.Outline_7.ImageTransparency = 1
+G.Outline_7.ScaleType = Enum.ScaleType.Slice
+G.Outline_7.SliceCenter = Rect.new(512, 512, 512, 512)
+G.Outline_7.SliceScale = 0.025806451216340065
+G.Outline_7.Parent = G.ImageButton_7
+
+-- Frame_22 (ImageLabel)
+G.Frame_22 = Instance.new("ImageLabel")
+G.Frame_22.Name = "Frame"
+G.Frame_22.AutomaticSize = Enum.AutomaticSize.Y
+G.Frame_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_22.BackgroundTransparency = 1
+G.Frame_22.BorderSizePixel = 0
+G.Frame_22.Size = UDim2.new(1, 0, 0, 0)
+G.Frame_22.Image = "rbxassetid://125083578015333"
+G.Frame_22.ImageTransparency = 1
+G.Frame_22.ScaleType = Enum.ScaleType.Slice
+G.Frame_22.SliceCenter = Rect.new(512, 325, 512, 325)
+G.Frame_22.SliceScale = 0.027692306786775589
+G.Frame_22.Parent = G.ImageButton_7
+
+-- UIListLayout_12 (UIListLayout)
+G.UIListLayout_12 = Instance.new("UIListLayout")
+G.UIListLayout_12.FillDirection = Enum.FillDirection.Horizontal
+G.UIListLayout_12.Padding = UDim.new(0, 9)
+G.UIListLayout_12.SortOrder = Enum.SortOrder.LayoutOrder
+G.UIListLayout_12.VerticalAlignment = Enum.VerticalAlignment.Center
+G.UIListLayout_12.Parent = G.Frame_22
+
+-- TextLabel_9 (TextLabel)
+G.TextLabel_9 = Instance.new("TextLabel")
+G.TextLabel_9.AutomaticSize = Enum.AutomaticSize.Y
+G.TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_9.BackgroundTransparency = 1
+G.TextLabel_9.BorderSizePixel = 0
+G.TextLabel_9.LayoutOrder = 2
+G.TextLabel_9.Size = UDim2.new(1, -25, 0, 0)
+G.TextLabel_9.FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.Medium, Enum.FontStyle.Normal)
+G.TextLabel_9.RichText = true
+G.TextLabel_9.Text = "Misc"
+G.TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_9.TextSize = 15
+G.TextLabel_9.TextTransparency = 0.30000001192092896
+G.TextLabel_9.TextWrapped = true
+G.TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
+G.TextLabel_9.Parent = G.Frame_22
+
+-- UIPadding_16 (UIPadding)
+G.UIPadding_16 = Instance.new("UIPadding")
+G.UIPadding_16.Parent = G.TextLabel_9
+
+-- UIPadding_17 (UIPadding)
+G.UIPadding_17 = Instance.new("UIPadding")
+G.UIPadding_17.PaddingBottom = UDim.new(0, 10)
+G.UIPadding_17.PaddingLeft = UDim.new(0, 11)
+G.UIPadding_17.PaddingRight = UDim.new(0, 11)
+G.UIPadding_17.PaddingTop = UDim.new(0, 10)
+G.UIPadding_17.Parent = G.Frame_22
+
+-- Frame_23 (Frame)
+G.Frame_23 = Instance.new("Frame")
+G.Frame_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_23.BackgroundTransparency = 1
+G.Frame_23.BorderSizePixel = 0
+G.Frame_23.Size = UDim2.new(0, 16, 0, 16)
+G.Frame_23.Parent = G.Frame_22
+
+-- ImageLabel_14 (ImageLabel)
+G.ImageLabel_14 = Instance.new("ImageLabel")
+G.ImageLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageLabel_14.BackgroundTransparency = 1
+G.ImageLabel_14.BorderSizePixel = 0
+G.ImageLabel_14.Size = UDim2.new(1, 0, 1, 0)
+G.ImageLabel_14.Image = "rbxassetid://91687150884779"
+G.ImageLabel_14.ImageColor3 = Color3.fromRGB(161, 161, 170)
+G.ImageLabel_14.ImageTransparency = 0.40000000596046448
+G.ImageLabel_14.Parent = G.Frame_23
+
+-- Frame_24 (Frame)
+G.Frame_24 = Instance.new("Frame")
+G.Frame_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_24.BackgroundTransparency = 1
+G.Frame_24.BorderSizePixel = 0
+G.Frame_24.ClipsDescendants = true
+G.Frame_24.Size = UDim2.new(1, 0, 0, 119)
+G.Frame_24.Parent = G.Frame_5
+
+-- TextButton_3 (TextButton)
+G.TextButton_3 = Instance.new("TextButton")
+G.TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.TextButton_3.BackgroundTransparency = 1
+G.TextButton_3.BorderSizePixel = 0
+G.TextButton_3.Size = UDim2.new(1, 0, 0, 42)
+G.TextButton_3.AutoButtonColor = false
+G.TextButton_3.Text = ""
+G.TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+G.TextButton_3.TextSize = 14
+G.TextButton_3.Parent = G.Frame_24
+
+-- TextLabel_10 (TextLabel)
+G.TextLabel_10 = Instance.new("TextLabel")
+G.TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_10.BackgroundTransparency = 1
+G.TextLabel_10.BorderSizePixel = 0
+G.TextLabel_10.Size = UDim2.new(1, -28, 1, 0)
+G.TextLabel_10.FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
+G.TextLabel_10.RichText = true
+G.TextLabel_10.Text = "Utility:"
+G.TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_10.TextSize = 14
+G.TextLabel_10.TextTransparency = 0.69999998807907104
+G.TextLabel_10.TextWrapped = true
+G.TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
+G.TextLabel_10.Parent = G.TextButton_3
+
+-- UIListLayout_13 (UIListLayout)
+G.UIListLayout_13 = Instance.new("UIListLayout")
+G.UIListLayout_13.FillDirection = Enum.FillDirection.Horizontal
+G.UIListLayout_13.Padding = UDim.new(0, 10)
+G.UIListLayout_13.SortOrder = Enum.SortOrder.LayoutOrder
+G.UIListLayout_13.VerticalAlignment = Enum.VerticalAlignment.Center
+G.UIListLayout_13.Parent = G.TextButton_3
+
+-- Frame_25 (Frame)
+G.Frame_25 = Instance.new("Frame")
+G.Frame_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_25.BackgroundTransparency = 1
+G.Frame_25.BorderSizePixel = 0
+G.Frame_25.Size = UDim2.new(0, 18, 0, 18)
+G.Frame_25.Parent = G.TextButton_3
+
+-- ImageLabel_15 (ImageLabel)
+G.ImageLabel_15 = Instance.new("ImageLabel")
+G.ImageLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageLabel_15.BackgroundTransparency = 1
+G.ImageLabel_15.BorderSizePixel = 0
+G.ImageLabel_15.Rotation = 180
+G.ImageLabel_15.Size = UDim2.new(1, 0, 1, 0)
+G.ImageLabel_15.Image = "rbxassetid://134243273101015"
+G.ImageLabel_15.ImageColor3 = Color3.fromRGB(161, 161, 170)
+G.ImageLabel_15.ImageTransparency = 0.69999998807907104
+G.ImageLabel_15.Parent = G.Frame_25
+
+-- UIPadding_18 (UIPadding)
+G.UIPadding_18 = Instance.new("UIPadding")
+G.UIPadding_18.PaddingLeft = UDim.new(0, 11)
+G.UIPadding_18.PaddingRight = UDim.new(0, 11)
+G.UIPadding_18.Parent = G.TextButton_3
+
+-- Content_4 (Frame)
+G.Content_4 = Instance.new("Frame")
+G.Content_4.Name = "Content"
+G.Content_4.AutomaticSize = Enum.AutomaticSize.Y
+G.Content_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Content_4.BackgroundTransparency = 1
+G.Content_4.BorderSizePixel = 0
+G.Content_4.Position = UDim2.new(0, 0, 0, 42)
+G.Content_4.Size = UDim2.new(1, 0, 0, 0)
+G.Content_4.Parent = G.Frame_24
+
+-- UIListLayout_14 (UIListLayout)
+G.UIListLayout_14 = Instance.new("UIListLayout")
+G.UIListLayout_14.Padding = UDim.new(0, 5)
+G.UIListLayout_14.SortOrder = Enum.SortOrder.LayoutOrder
+G.UIListLayout_14.VerticalAlignment = Enum.VerticalAlignment.Bottom
+G.UIListLayout_14.Parent = G.Content_4
+
+-- ImageButton_8 (ImageButton)
+G.ImageButton_8 = Instance.new("ImageButton")
+G.ImageButton_8.AutomaticSize = Enum.AutomaticSize.Y
+G.ImageButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.ImageButton_8.BackgroundTransparency = 1
+G.ImageButton_8.BorderSizePixel = 0
+G.ImageButton_8.Size = UDim2.new(1, -7, 0, 0)
+G.ImageButton_8.AutoButtonColor = false
+G.ImageButton_8.Image = "rbxassetid://125083578015333"
+G.ImageButton_8.ImageTransparency = 1
+G.ImageButton_8.ScaleType = Enum.ScaleType.Slice
+G.ImageButton_8.SliceCenter = Rect.new(512, 325, 512, 325)
+G.ImageButton_8.SliceScale = 0.027692306786775589
+G.ImageButton_8.Parent = G.Content_4
+
+-- Outline_8 (ImageLabel)
+G.Outline_8 = Instance.new("ImageLabel")
+G.Outline_8.Name = "Outline"
+G.Outline_8.AnchorPoint = Vector2.new(0.5, 0.5)
+G.Outline_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Outline_8.BackgroundTransparency = 1
+G.Outline_8.BorderSizePixel = 0
+G.Outline_8.Position = UDim2.new(0.5, 0, 0.5, 0)
+G.Outline_8.Size = UDim2.new(1, 1, 1, 1)
+G.Outline_8.Image = "rbxassetid://131126436897551"
+G.Outline_8.ImageTransparency = 1
+G.Outline_8.ScaleType = Enum.ScaleType.Slice
+G.Outline_8.SliceCenter = Rect.new(512, 512, 512, 512)
+G.Outline_8.SliceScale = 0.025806451216340065
+G.Outline_8.Parent = G.ImageButton_8
+
+-- Frame_26 (ImageLabel)
+G.Frame_26 = Instance.new("ImageLabel")
+G.Frame_26.Name = "Frame"
+G.Frame_26.AutomaticSize = Enum.AutomaticSize.Y
+G.Frame_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.Frame_26.BackgroundTransparency = 1
+G.Frame_26.BorderSizePixel = 0
+G.Frame_26.Size = UDim2.new(1, 0, 0, 0)
+G.Frame_26.Image = "rbxassetid://125083578015333"
+G.Frame_26.ImageTransparency = 1
+G.Frame_26.ScaleType = Enum.ScaleType.Slice
+G.Frame_26.SliceCenter = Rect.new(512, 325, 512, 325)
+G.Frame_26.SliceScale = 0.027692306786775589
+G.Frame_26.Parent = G.ImageButton_8
+
+-- UIListLayout_15 (UIListLayout)
+G.UIListLayout_15 = Instance.new("UIListLayout")
+G.UIListLayout_15.FillDirection = Enum.FillDirection.Horizontal
+G.UIListLayout_15.Padding = UDim.new(0, 9)
+G.UIListLayout_15.SortOrder = Enum.SortOrder.LayoutOrder
+G.UIListLayout_15.VerticalAlignment = Enum.VerticalAlignment.Center
+G.UIListLayout_15.Parent = G.Frame_26
+
+-- TextLabel_11 (TextLabel)
+G.TextLabel_11 = Instance.new("TextLabel")
+G.TextLabel_11.AutomaticSize = Enum.AutomaticSize.Y
+G.TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.TextLabel_11.BackgroundTransparency = 1
+G.TextLabel_11.BorderSizePixel = 0
+G.TextLabel_11.LayoutOrder = 2
+G.TextLabel_11.Size = UDim2.new(1, -25, 0, 0)
+G.TextLabel_11.FontFace = Font.new("rbxassetid://12187365364", Enum.FontWeight.Medium, Enum.FontSt
+... (Tiempo restante: 2 MB)
